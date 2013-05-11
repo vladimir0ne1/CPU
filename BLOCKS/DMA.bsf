@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 376 240)
+	(text "DMA" (rect 5 0 32 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "INPUT_ADDRESS[0..7]" (rect 0 0 126 14)(font "Arial" (font_size 8)))
+		(text "INPUT_ADDRESS[0..7]" (rect 21 43 147 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "DATA[0..7]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "DATA[0..7]" (rect 21 59 83 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 360 32)
+		(output)
+		(text "t_out0" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "t_out0" (rect 304 27 339 41)(font "Arial" (font_size 8)))
+		(line (pt 360 32)(pt 344 32)(line_width 1))
+	)
+	(port
+		(pt 360 48)
+		(output)
+		(text "t_out1" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "t_out1" (rect 304 43 339 57)(font "Arial" (font_size 8)))
+		(line (pt 360 48)(pt 344 48)(line_width 1))
+	)
+	(port
+		(pt 360 64)
+		(output)
+		(text "t_out2" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "t_out2" (rect 304 59 339 73)(font "Arial" (font_size 8)))
+		(line (pt 360 64)(pt 344 64)(line_width 1))
+	)
+	(port
+		(pt 360 80)
+		(output)
+		(text "finish" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "finish" (rect 309 75 339 89)(font "Arial" (font_size 8)))
+		(line (pt 360 80)(pt 344 80)(line_width 1))
+	)
+	(port
+		(pt 360 96)
+		(output)
+		(text "REG0[0..7]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "REG0[0..7]" (rect 279 91 339 105)(font "Arial" (font_size 8)))
+		(line (pt 360 96)(pt 344 96)(line_width 3))
+	)
+	(port
+		(pt 360 112)
+		(output)
+		(text "WORDS_NUM_COUNTER[0..7]" (rect 0 0 171 14)(font "Arial" (font_size 8)))
+		(text "WORDS_NUM_COUNTER[0..7]" (rect 168 107 339 121)(font "Arial" (font_size 8)))
+		(line (pt 360 112)(pt 344 112)(line_width 3))
+	)
+	(port
+		(pt 360 128)
+		(output)
+		(text "ADDRESS[0..7]" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "ADDRESS[0..7]" (rect 253 123 339 137)(font "Arial" (font_size 8)))
+		(line (pt 360 128)(pt 344 128)(line_width 3))
+	)
+	(port
+		(pt 360 144)
+		(output)
+		(text "ADDRESS_COUNTER_OUT[0..7]" (rect 0 0 181 14)(font "Arial" (font_size 8)))
+		(text "ADDRESS_COUNTER_OUT[0..7]" (rect 158 139 339 153)(font "Arial" (font_size 8)))
+		(line (pt 360 144)(pt 344 144)(line_width 3))
+	)
+	(port
+		(pt 360 160)
+		(output)
+		(text "REG1[0..7]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "REG1[0..7]" (rect 279 155 339 169)(font "Arial" (font_size 8)))
+		(line (pt 360 160)(pt 344 160)(line_width 3))
+	)
+	(port
+		(pt 360 176)
+		(output)
+		(text "DEV[0..2]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "DEV[0..2]" (rect 286 171 339 185)(font "Arial" (font_size 8)))
+		(line (pt 360 176)(pt 344 176)(line_width 3))
+	)
+	(port
+		(pt 360 192)
+		(output)
+		(text "REG2[0..7]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "REG2[0..7]" (rect 279 187 339 201)(font "Arial" (font_size 8)))
+		(line (pt 360 192)(pt 344 192)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 344 208)(line_width 1))
+	)
+)

@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 352 208)
+	(text "DF" (rect 5 0 20 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "OPERATION_CODE[0..15]" (rect 0 0 143 14)(font "Arial" (font_size 8)))
+		(text "OPERATION_CODE[0..15]" (rect 21 27 164 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "DF_RON_NUM_IN[0..1]" (rect 0 0 127 14)(font "Arial" (font_size 8)))
+		(text "DF_RON_NUM_IN[0..1]" (rect 21 43 148 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ADDRESSING_TYPE" (rect 0 0 115 14)(font "Arial" (font_size 8)))
+		(text "ADDRESSING_TYPE" (rect 21 59 136 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CMD_1[0..7]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "CMD_1[0..7]" (rect 21 75 89 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 91 36 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "DATA[0..7]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "DATA[0..7]" (rect 21 107 83 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "RON_DATA[0..7]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "RON_DATA[0..7]" (rect 21 123 116 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 336 48)
+		(output)
+		(text "ADDRESS[0..7]" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "ADDRESS[0..7]" (rect 229 43 315 57)(font "Arial" (font_size 8)))
+		(line (pt 336 48)(pt 320 48)(line_width 3))
+	)
+	(port
+		(pt 336 64)
+		(output)
+		(text "OP0[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "OP0[0..7]" (rect 264 59 315 73)(font "Arial" (font_size 8)))
+		(line (pt 336 64)(pt 320 64)(line_width 3))
+	)
+	(port
+		(pt 336 80)
+		(output)
+		(text "op0_write" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "op0_write" (rect 258 75 315 89)(font "Arial" (font_size 8)))
+		(line (pt 336 80)(pt 320 80)(line_width 1))
+	)
+	(port
+		(pt 336 96)
+		(output)
+		(text "OP1[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "OP1[0..7]" (rect 264 91 315 105)(font "Arial" (font_size 8)))
+		(line (pt 336 96)(pt 320 96)(line_width 3))
+	)
+	(port
+		(pt 336 112)
+		(output)
+		(text "op1_write" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "op1_write" (rect 258 107 315 121)(font "Arial" (font_size 8)))
+		(line (pt 336 112)(pt 320 112)(line_width 1))
+	)
+	(port
+		(pt 336 128)
+		(output)
+		(text "DF_RON_NUM_OUT[0..1]" (rect 0 0 141 14)(font "Arial" (font_size 8)))
+		(text "DF_RON_NUM_OUT[0..1]" (rect 174 123 315 137)(font "Arial" (font_size 8)))
+		(line (pt 336 128)(pt 320 128)(line_width 3))
+	)
+	(port
+		(pt 336 144)
+		(output)
+		(text "DF_COUNTER[0..3]" (rect 0 0 107 14)(font "Arial" (font_size 8)))
+		(text "DF_COUNTER[0..3]" (rect 208 139 315 153)(font "Arial" (font_size 8)))
+		(line (pt 336 144)(pt 320 144)(line_width 3))
+	)
+	(port
+		(pt 336 32)
+		(bidir)
+		(text "CONTROL_BUS[0..24]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "CONTROL_BUS[0..24]" (rect 190 27 315 41)(font "Arial" (font_size 8)))
+		(line (pt 336 32)(pt 320 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 320 176)(line_width 1))
+	)
+)
