@@ -2,65 +2,35 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 5.003 ns
-From           : read/write_mem
-To             : CACHE:inst32|SET:inst58|ROW:inst64|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]
-From Clock     : --
-To Clock       : clk
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 28.350 ns
-From           : CACHE:inst32|SET:inst59|ROW:inst64|inst8
-To             : cache_out[1]
+Actual Time    : 27.521 ns
+From           : CACHE:inst32|SET:inst64|ROW:inst64|inst8
+To             : cache_out[7]
 From Clock     : clk
 To Clock       : --
-Failed Paths   : 0
-
-Type           : Worst-case tpd
-Slack          : N/A
-Required Time  : None
-Actual Time    : 11.318 ns
-From           : read/write_mem
-To             : MEM_DATA[2]
-From Clock     : --
-To Clock       : --
-Failed Paths   : 0
-
-Type           : Worst-case th
-Slack          : N/A
-Required Time  : None
-Actual Time    : 13.759 ns
-From           : read/write_mem
-To             : CACHE:inst32|SET:inst64|ROW:inst|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[0]
-From Clock     : --
-To Clock       : clk
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clk'
-Slack          : -2.749 ns
+Slack          : -1.675 ns
 Required Time  : 50.00 MHz ( period = 20.000 ns )
-Actual Time    : 43.96 MHz ( period = 22.749 ns )
+Actual Time    : 46.14 MHz ( period = 21.675 ns )
 From           : CACHE:inst32|SET:inst59|LRU:inst17|lpm_dff1:inst22|lpm_ff:lpm_ff_component|dffs[1]
-To             : CACHE:inst32|SET:inst59|LRU:inst17|lpm_counter3:inst16|lpm_counter:lpm_counter_component|cntr_8ek:auto_generated|safe_q[1]
+To             : CACHE:inst32|SET:inst59|LRU:inst17|lpm_counter4:inst|lpm_counter:lpm_counter_component|cntr_7ek:auto_generated|safe_q[1]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 448
+Failed Paths   : 275
 
 Type           : Clock Hold: 'clk'
-Slack          : -20.180 ns
+Slack          : -18.730 ns
 Required Time  : 50.00 MHz ( period = 20.000 ns )
 Actual Time    : N/A
-From           : CACHE:inst32|SET:inst59|LRU:inst17|lpm_counter3:inst17|lpm_counter:lpm_counter_component|cntr_8ek:auto_generated|safe_q[0]
-To             : CACHE:inst32|SET:inst59|LRU:inst17|lpm_dff1:inst22|lpm_ff:lpm_ff_component|dffs[0]
+From           : CACHE:inst32|SET:inst61|LRU:inst17|lpm_counter3:inst17|lpm_counter:lpm_counter_component|cntr_8ek:auto_generated|safe_q[0]
+To             : CACHE:inst32|SET:inst61|LRU:inst17|lpm_dff1:inst22|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 58696
+Failed Paths   : 71383
 
 Type           : Total number of failed paths
 Slack          : 
@@ -70,7 +40,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 59144
+Failed Paths   : 71658
 
 --------------------------------------------------------------------------------------
 

@@ -20,8 +20,8 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 280 112)
-	(text "Memory" (rect 5 0 49 14)(font "Arial" (font_size 8)))
+	(rect 16 16 312 112)
+	(text "MEMORY" (rect 5 0 58 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -33,25 +33,25 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "read/write" (rect 0 0 59 14)(font "Arial" (font_size 8)))
-		(text "read/write" (rect 21 43 80 57)(font "Arial" (font_size 8)))
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 0 64)
-		(input)
-		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 59 36 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(pt 296 32)
+		(bidir)
+		(text "CONTROL_BUS[0..24]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "CONTROL_BUS[0..24]" (rect 150 27 275 41)(font "Arial" (font_size 8)))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(port
-		(pt 264 32)
+		(pt 296 48)
 		(bidir)
 		(text "DATA_BUS[0..7]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
-		(text "DATA_BUS[0..7]" (rect 149 27 243 41)(font "Arial" (font_size 8)))
-		(line (pt 264 32)(pt 248 32)(line_width 3))
+		(text "DATA_BUS[0..7]" (rect 181 43 275 57)(font "Arial" (font_size 8)))
+		(line (pt 296 48)(pt 280 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 248 80)(line_width 1))
+		(rectangle (rect 16 16 280 80)(line_width 1))
 	)
 )

@@ -10713,6 +10713,31 @@ applicable agreement for further details.
 		(line (pt 14 25)(pt 32 16)(line_width 1))
 	)
 )
+(symbol
+	(rect 944 -472 992 -440)
+	(text "WIRE" (rect 24 0 47 10)(font "Arial" (font_size 6)))
+	(text "inst114" (rect 16 21 51 33)(font "Arial" ))
+	(port
+		(pt 48 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 35 7 46 19)(font "Courier New" (bold))(invisible))
+		(line (pt 48 16)(pt 34 16)(line_width 1))
+	)
+	(port
+		(pt 0 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect -1 7 16 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 0 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 34 7)(pt 16 16)(line_width 1))
+		(line (pt 34 25)(pt 34 7)(line_width 1))
+		(line (pt 34 25)(pt 16 16)(line_width 1))
+	)
+	(flipy)
+)
 (connector
 	(text "SET[0..3]" (rect 614 304 660 316)(font "Arial" ))
 	(pt 736 320)
@@ -16241,11 +16266,6 @@ applicable agreement for further details.
 	(pt 592 504)
 )
 (connector
-	(text "<<__$DEF_ALIAS11980>>" (rect 781 496 910 508)(font "Arial" )(invisible))
-	(pt 728 512)
-	(pt 848 512)
-)
-(connector
 	(text "bus_grand" (rect 584 504 634 516)(font "Arial" ))
 	(pt 664 520)
 	(pt 576 520)
@@ -16593,11 +16613,6 @@ applicable agreement for further details.
 	(pt 800 -416)
 )
 (connector
-	(pt 600 -232)
-	(pt 800 -232)
-	(bus)
-)
-(connector
 	(pt 816 -232)
 	(pt 816 -376)
 )
@@ -16650,6 +16665,35 @@ applicable agreement for further details.
 	(pt 1192 -232)
 	(pt 1272 -232)
 	(bus)
+)
+(connector
+	(pt 784 -232)
+	(pt 784 -456)
+)
+(connector
+	(pt 600 -232)
+	(pt 784 -232)
+	(bus)
+)
+(connector
+	(pt 784 -232)
+	(pt 800 -232)
+	(bus)
+)
+(connector
+	(text "wr_to_ram" (rect 755 496 805 508)(font "Arial" ))
+	(pt 728 512)
+	(pt 848 512)
+)
+(connector
+	(text "wr_to_ram" (rect 1019 -472 1069 -460)(font "Arial" ))
+	(pt 992 -456)
+	(pt 1064 -456)
+)
+(connector
+	(text "CONTROL_BUS[20]" (rect 828 -472 928 -460)(font "Arial" ))
+	(pt 784 -456)
+	(pt 944 -456)
 )
 (junction (pt 1344 312))
 (junction (pt 2120 184))
@@ -16714,6 +16758,7 @@ applicable agreement for further details.
 (junction (pt 816 -232))
 (junction (pt 832 -232))
 (junction (pt 848 -232))
+(junction (pt 784 -232))
 (text "LOAD_SETS" (rect 616 1760 687 1774)(font "Arial" (font_size 8)))
 (text "UPDATE_SETS" (rect 616 808 700 822)(font "Arial" (font_size 8)))
 (text "READ_SETS" (rect 960 848 1030 862)(font "Arial" (font_size 8)))
