@@ -38,22 +38,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -344 -1024 -176 -1008)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 19 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect -344 -1008 -176 -992)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "DATA[0..7]" (rect 5 0 59 12)(font "Arial" ))
@@ -248,7 +232,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect -472 -1280 -264 -1264)
 	(text "BIDIR" (rect 183 0 207 10)(font "Arial" (font_size 6)))
-	(text "CONTROL_BUS[0..24]" (rect 5 0 118 12)(font "Arial" ))
+	(text "CONTROL_BUS[0..32]" (rect 5 0 118 12)(font "Arial" ))
 	(pt 208 8)
 	(drawing
 		(line (pt 152 4)(pt 130 4)(line_width 1))
@@ -2414,6 +2398,30 @@ applicable agreement for further details.
 		(arc (pt 25 51)(pt 49 40)(rect -6 -11 57 52)(line_width 1))
 	)
 )
+(symbol
+	(rect 104 -1160 152 -1128)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst35" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16)(line_width 1))
+		(line (pt 14 25)(pt 14 7)(line_width 1))
+		(line (pt 14 25)(pt 32 16)(line_width 1))
+	)
+)
 (connector
 	(pt -144 -1080)
 	(pt -176 -1080)
@@ -2977,25 +2985,8 @@ applicable agreement for further details.
 	(pt 1472 -808)
 )
 (connector
-	(pt -32 -1272)
-	(pt -8 -1272)
-	(bus)
-)
-(connector
 	(pt -8 -1272)
 	(pt 16 -1272)
-	(bus)
-)
-(connector
-	(text "CB[0..24]" (rect 38 -1288 85 -1276)(font "Arial" ))
-	(pt 16 -1272)
-	(pt 112 -1272)
-	(bus)
-)
-(connector
-	(text "CONTROL_BUS[0..24]" (rect -238 -1288 -125 -1276)(font "Arial" ))
-	(pt -264 -1272)
-	(pt -128 -1272)
 	(bus)
 )
 (connector
@@ -3076,7 +3067,6 @@ applicable agreement for further details.
 	(pt 1368 -656)
 )
 (connector
-	(text "<<__$DEF_ALIAS3810>>" (rect 1344 -696 1467 -684)(font "Arial" )(invisible))
 	(pt 1336 -680)
 	(pt 1368 -680)
 )
@@ -3553,6 +3543,42 @@ applicable agreement for further details.
 	(pt 552 360)
 	(pt 704 360)
 )
+(connector
+	(text "CONTROL_BUS[0..32]" (rect -238 -1288 -125 -1276)(font "Arial" ))
+	(pt -264 -1272)
+	(pt -128 -1272)
+	(bus)
+)
+(connector
+	(text "CB[0..32]" (rect 38 -1288 85 -1276)(font "Arial" ))
+	(pt 16 -1272)
+	(pt 112 -1272)
+	(bus)
+)
+(connector
+	(text "clk" (rect 160 -1160 174 -1148)(font "Arial" ))
+	(pt 152 -1144)
+	(pt 200 -1144)
+)
+(connector
+	(text "CB[27]" (rect 14 -1160 48 -1148)(font "Arial" ))
+	(pt -24 -1144)
+	(pt 104 -1144)
+)
+(connector
+	(pt -24 -1272)
+	(pt -24 -1144)
+)
+(connector
+	(pt -32 -1272)
+	(pt -24 -1272)
+	(bus)
+)
+(connector
+	(pt -24 -1272)
+	(pt -8 -1272)
+	(bus)
+)
 (junction (pt -8 -1272))
 (junction (pt -104 -1272))
 (junction (pt 16 -1272))
@@ -3574,3 +3600,4 @@ applicable agreement for further details.
 (junction (pt 96 -96))
 (junction (pt 552 72))
 (junction (pt 552 360))
+(junction (pt -24 -1272))

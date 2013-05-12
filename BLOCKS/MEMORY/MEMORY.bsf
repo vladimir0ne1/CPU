@@ -31,17 +31,10 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
 		(pt 296 32)
 		(bidir)
-		(text "CONTROL_BUS[0..24]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
-		(text "CONTROL_BUS[0..24]" (rect 150 27 275 41)(font "Arial" (font_size 8)))
+		(text "CONTROL_BUS[0..32]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "CONTROL_BUS[0..32]" (rect 150 27 275 41)(font "Arial" (font_size 8)))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(port

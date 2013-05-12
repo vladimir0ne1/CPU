@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 75 36 89)(font "Arial" (font_size 8)))
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 21 75 50 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
@@ -110,8 +110,8 @@ applicable agreement for further details.
 	(port
 		(pt 288 32)
 		(bidir)
-		(text "CONTROL_BUS[0..24]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
-		(text "CONTROL_BUS[0..24]" (rect 142 27 267 41)(font "Arial" (font_size 8)))
+		(text "CONTROL_BUS[0..32]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "CONTROL_BUS[0..32]" (rect 142 27 267 41)(font "Arial" (font_size 8)))
 		(line (pt 288 32)(pt 272 32)(line_width 3))
 	)
 	(drawing

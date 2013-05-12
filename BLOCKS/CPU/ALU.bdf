@@ -88,7 +88,7 @@ applicable agreement for further details.
 	(output)
 	(rect 880 440 1056 456)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "FLAG[0..7]" (rect 90 0 144 12)(font "Arial" ))
+	(text "FLAG[0..3]" (rect 90 0 144 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -550,6 +550,23 @@ applicable agreement for further details.
 		(line (pt 16 96)(pt 16 16)(line_width 1))
 	)
 )
+(symbol
+	(rect 600 800 632 832)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0)(line_width 1))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16)(line_width 1))
+		(line (pt 16 16)(pt 24 8)(line_width 1))
+		(line (pt 8 8)(pt 24 8)(line_width 1))
+	)
+)
 (connector
 	(pt 232 48)
 	(pt 432 48)
@@ -723,16 +740,6 @@ applicable agreement for further details.
 (connector
 	(pt 728 720)
 	(pt 728 704)
-	(bus)
-)
-(connector
-	(pt 728 752)
-	(pt 728 736)
-	(bus)
-)
-(connector
-	(pt 728 736)
-	(pt 728 720)
 	(bus)
 )
 (connector
@@ -955,6 +962,30 @@ applicable agreement for further details.
 	(pt 760 272)
 	(pt 680 272)
 )
+(connector
+	(pt 728 720)
+	(pt 728 736)
+	(bus)
+)
+(connector
+	(pt 616 752)
+	(pt 616 800)
+)
+(connector
+	(pt 728 736)
+	(pt 728 752)
+	(bus)
+)
+(connector
+	(pt 728 752)
+	(pt 728 800)
+	(bus)
+)
+(connector
+	(text "FLAG[3]" (rect 644 736 685 748)(font "Arial" ))
+	(pt 728 752)
+	(pt 616 752)
+)
 (junction (pt 432 448))
 (junction (pt 432 488))
 (junction (pt 432 528))
@@ -982,3 +1013,4 @@ applicable agreement for further details.
 (junction (pt 360 -8))
 (junction (pt 248 80))
 (junction (pt 392 112))
+(junction (pt 728 752))

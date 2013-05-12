@@ -38,22 +38,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 752 -296 920 -280)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 19 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 752 -264 920 -248)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "IP_IN[0..7]" (rect 5 0 59 12)(font "Arial" ))
@@ -200,7 +184,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 704 -576 912 -560)
 	(text "BIDIR" (rect 183 0 207 10)(font "Arial" (font_size 6)))
-	(text "CONTROL_BUS[0..24]" (rect 5 0 118 12)(font "Arial" ))
+	(text "CONTROL_BUS[0..32]" (rect 5 0 118 12)(font "Arial" ))
 	(pt 208 8)
 	(drawing
 		(line (pt 152 4)(pt 130 4)(line_width 1))
@@ -1374,6 +1358,30 @@ applicable agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36)(line_width 1))
 	)
 )
+(symbol
+	(rect 1280 -360 1328 -328)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst35" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16)(line_width 1))
+		(line (pt 14 25)(pt 14 7)(line_width 1))
+		(line (pt 14 25)(pt 32 16)(line_width 1))
+	)
+)
 (connector
 	(text "CMD_0_OUT[0..7]" (rect 1234 -56 1324 -44)(font "Arial" ))
 	(pt 1136 -40)
@@ -1829,12 +1837,6 @@ applicable agreement for further details.
 	(pt 1272 -696)
 )
 (connector
-	(text "CONTROL_BUS[0..24]" (rect 938 -584 1051 -572)(font "Arial" ))
-	(pt 912 -568)
-	(pt 1048 -568)
-	(bus)
-)
-(connector
 	(text "CB[5]" (rect 1238 -544 1266 -532)(font "Arial" ))
 	(pt 1280 -528)
 	(pt 1216 -528)
@@ -1842,12 +1844,6 @@ applicable agreement for further details.
 (connector
 	(pt 1216 -568)
 	(pt 1216 -528)
-)
-(connector
-	(text "CB[0..24]" (rect 1214 -584 1261 -572)(font "Arial" ))
-	(pt 1216 -568)
-	(pt 1288 -568)
-	(bus)
 )
 (connector
 	(text "CB[11]" (rect 1235 -496 1269 -484)(font "Arial" ))
@@ -1971,11 +1967,6 @@ applicable agreement for further details.
 	(pt 1168 -384)
 )
 (connector
-	(pt 1144 -568)
-	(pt 1168 -568)
-	(bus)
-)
-(connector
 	(pt 1168 -568)
 	(pt 1184 -568)
 	(bus)
@@ -1984,11 +1975,6 @@ applicable agreement for further details.
 	(text "ip_by_jmp_write" (rect 1336 -400 1415 -388)(font "Arial" ))
 	(pt 1328 -384)
 	(pt 1376 -384)
-)
-(connector
-	(text "CB[22]" (rect 1208 -400 1242 -388)(font "Arial" ))
-	(pt 1168 -384)
-	(pt 1280 -384)
 )
 (connector
 	(pt 1776 720)
@@ -2049,6 +2035,47 @@ applicable agreement for further details.
 	(pt 1856 496)
 	(pt 1856 656)
 )
+(connector
+	(text "CB[26]" (rect 1208 -400 1242 -388)(font "Arial" ))
+	(pt 1168 -384)
+	(pt 1280 -384)
+)
+(connector
+	(text "CONTROL_BUS[0..32]" (rect 938 -584 1051 -572)(font "Arial" ))
+	(pt 912 -568)
+	(pt 1048 -568)
+	(bus)
+)
+(connector
+	(text "CB[0..32]" (rect 1214 -584 1261 -572)(font "Arial" ))
+	(pt 1216 -568)
+	(pt 1288 -568)
+	(bus)
+)
+(connector
+	(pt 1152 -568)
+	(pt 1152 -344)
+)
+(connector
+	(pt 1144 -568)
+	(pt 1152 -568)
+	(bus)
+)
+(connector
+	(pt 1152 -568)
+	(pt 1168 -568)
+	(bus)
+)
+(connector
+	(text "clk" (rect 1336 -360 1350 -348)(font "Arial" ))
+	(pt 1328 -344)
+	(pt 1376 -344)
+)
+(connector
+	(text "CB[27]" (rect 1190 -360 1224 -348)(font "Arial" ))
+	(pt 1152 -344)
+	(pt 1280 -344)
+)
 (junction (pt 968 -40))
 (junction (pt 1632 208))
 (junction (pt 1096 -104))
@@ -2076,3 +2103,4 @@ applicable agreement for further details.
 (junction (pt 1776 600))
 (junction (pt 1168 -568))
 (junction (pt 1648 664))
+(junction (pt 1152 -568))

@@ -37,22 +37,6 @@ applicable agreement for further details.
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
-	(input)
-	(rect 8 320 176 336)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 19 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
 	(output)
 	(rect 688 264 864 280)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -118,9 +102,9 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 8 -64 216 -48)
+	(rect 24 -232 232 -216)
 	(text "BIDIR" (rect 183 0 207 10)(font "Arial" (font_size 6)))
-	(text "CONTROL_BUS[0..24]" (rect 5 0 118 12)(font "Arial" ))
+	(text "CONTROL_BUS[0..32]" (rect 5 0 118 12)(font "Arial" ))
 	(pt 208 8)
 	(drawing
 		(line (pt 152 4)(pt 130 4)(line_width 1))
@@ -369,9 +353,33 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 352 -32 400 0)
+	(rect 384 -200 432 -168)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16)(line_width 1))
+		(line (pt 14 25)(pt 14 7)(line_width 1))
+		(line (pt 14 25)(pt 32 16)(line_width 1))
+	)
+)
+(symbol
+	(rect 384 -144 432 -112)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst35" (rect 3 21 32 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -726,37 +734,9 @@ applicable agreement for further details.
 	(pt 1096 0)
 )
 (connector
-	(pt 248 -56)
-	(pt 248 -16)
-)
-(connector
-	(pt 216 -56)
-	(pt 248 -56)
-	(bus)
-)
-(connector
-	(pt 248 -56)
-	(pt 376 -56)
-	(bus)
-)
-(connector
-	(text "CONTROL_BUS[12]" (rect 266 -32 366 -20)(font "Arial" ))
-	(pt 248 -16)
-	(pt 352 -16)
-)
-(connector
-	(text "enable" (rect 441 -32 472 -20)(font "Arial" ))
-	(pt 400 -16)
-	(pt 472 -16)
-)
-(connector
 	(text "enable" (rect 192 296 223 308)(font "Arial" ))
 	(pt 176 312)
 	(pt 312 312)
-)
-(connector
-	(pt 176 328)
-	(pt 312 328)
 )
 (connector
 	(pt 376 320)
@@ -770,6 +750,54 @@ applicable agreement for further details.
 	(text "ADDRESSING_TYPE" (rect 453 200 560 212)(font "Arial" ))
 	(pt 624 344)
 	(pt 632 344)
+)
+(connector
+	(pt 264 -224)
+	(pt 264 -184)
+)
+(connector
+	(text "enable" (rect 489 -200 520 -188)(font "Arial" ))
+	(pt 432 -184)
+	(pt 520 -184)
+)
+(connector
+	(pt 264 -224)
+	(pt 392 -224)
+	(bus)
+)
+(connector
+	(text "CONTROL_BUS[12]" (rect 282 -200 382 -188)(font "Arial" ))
+	(pt 264 -184)
+	(pt 384 -184)
+)
+(connector
+	(text "clk" (rect 440 -144 454 -132)(font "Arial" ))
+	(pt 432 -128)
+	(pt 480 -128)
+)
+(connector
+	(pt 248 -224)
+	(pt 248 -128)
+)
+(connector
+	(pt 232 -224)
+	(pt 248 -224)
+	(bus)
+)
+(connector
+	(pt 248 -224)
+	(pt 264 -224)
+	(bus)
+)
+(connector
+	(text "clk" (rect 187 312 201 324)(font "Arial" ))
+	(pt 176 328)
+	(pt 312 328)
+)
+(connector
+	(text "CONTROL_BUS[27]" (rect 294 -144 394 -132)(font "Arial" ))
+	(pt 384 -128)
+	(pt 248 -128)
 )
 (junction (pt 184 32))
 (junction (pt 248 32))
@@ -791,4 +819,5 @@ applicable agreement for further details.
 (junction (pt 1096 192))
 (junction (pt 1096 208))
 (junction (pt 1096 224))
-(junction (pt 248 -56))
+(junction (pt 264 -224))
+(junction (pt 248 -224))

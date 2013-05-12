@@ -1,5 +1,5 @@
 Flow report for microcomputer
-Sun May 12 00:11:59 2013
+Sun May 12 15:45:28 2013
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Sun May 12 00:11:59 2013   ;
+; Flow Status                   ; Successful - Sun May 12 15:45:28 2013   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; microcomputer                           ;
 ; Top-level Entity Name         ; microcomputer                           ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; No                                      ;
-; Logic utilization             ; 22 %                                    ;
-;     Combinational ALUTs       ; 1,648 / 12,480 ( 13 % )                 ;
-;     Dedicated logic registers ; 1,490 / 12,480 ( 12 % )                 ;
-; Total registers               ; 1490                                    ;
-; Total pins                    ; 181 / 343 ( 53 % )                      ;
+; Logic utilization             ; 23 %                                    ;
+;     Combinational ALUTs       ; 1,637 / 12,480 ( 13 % )                 ;
+;     Dedicated logic registers ; 1,495 / 12,480 ( 12 % )                 ;
+; Total registers               ; 1495                                    ;
+; Total pins                    ; 192 / 343 ( 56 % )                      ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 2,048 / 419,328 ( < 1 % )               ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2013 00:10:27 ;
+; Start date & time ; 05/12/2013 15:43:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; microcomputer       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 1096884134828.136830662705940  ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 1096884134828.136836262804768  ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_BUSTRI                     ; --            ; --          ; --             ;
@@ -109,6 +109,12 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_ADD_SUB                    ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COMPARE                    ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COMPARE                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
@@ -274,6 +280,18 @@ applicable agreement for further details.
 ; MISC_FILE                          ; HELPERS/lpm_compare6.bsf       ; --            ; --          ; --             ;
 ; MISC_FILE                          ; HELPERS/lpm_compare6.inc       ; --            ; --          ; --             ;
 ; MISC_FILE                          ; HELPERS/lpm_compare6.cmp       ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_counter7.tdf       ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_counter7.bsf       ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_counter7.inc       ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_counter7.cmp       ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff4.tdf           ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff4.bsf           ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff4.inc           ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff4.cmp           ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff5.tdf           ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff5.bsf           ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff5.inc           ; --            ; --          ; --             ;
+; MISC_FILE                          ; HELPERS/lpm_dff5.cmp           ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                       ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; --          ; Top            ;
 ; SEARCH_PATH                        ; helpers                        ; --            ; --          ; --             ;
@@ -286,11 +304,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:29     ; 1.0                     ; 259 MB              ; 00:00:29                           ;
-; Fitter                  ; 00:00:49     ; 1.0                     ; 244 MB              ; 00:00:48                           ;
-; Assembler               ; 00:00:04     ; 1.0                     ; 218 MB              ; 00:00:03                           ;
+; Analysis & Synthesis    ; 00:00:34     ; 1.0                     ; 260 MB              ; 00:00:34                           ;
+; Fitter                  ; 00:00:52     ; 1.0                     ; 244 MB              ; 00:00:51                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 218 MB              ; 00:00:04                           ;
 ; Classic Timing Analyzer ; 00:00:03     ; 1.0                     ; 162 MB              ; 00:00:03                           ;
-; Total                   ; 00:01:25     ; --                      ; --                  ; 00:01:23                           ;
+; Total                   ; 00:01:32     ; --                      ; --                  ; 00:01:32                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
