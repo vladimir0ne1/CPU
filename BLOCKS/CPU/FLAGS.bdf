@@ -22,22 +22,6 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect 104 272 280 288)
-	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
-	(text "ALU_FLAGS[0..3]" (rect 5 0 93 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 100 12)(pt 125 12)(line_width 1))
-		(line (pt 100 4)(pt 125 4)(line_width 1))
-		(line (pt 129 8)(pt 176 8)(line_width 1))
-		(line (pt 100 12)(pt 100 4)(line_width 1))
-		(line (pt 125 4)(pt 129 8)(line_width 1))
-		(line (pt 125 12)(pt 129 8)(line_width 1))
-	)
-	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 88 288 280 304)
 	(text "INPUT" (rect 157 0 185 10)(font "Arial" (font_size 6)))
 	(text "stack_overflow_flag" (rect 5 0 105 12)(font "Arial" ))
@@ -51,6 +35,22 @@ applicable agreement for further details.
 		(line (pt 141 12)(pt 145 8)(line_width 1))
 	)
 	(text "VCC" (rect 160 7 180 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 104 272 280 288)
+	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
+	(text "ALU_FLAGS[0..5]" (rect 5 0 93 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12)(line_width 1))
+		(line (pt 100 4)(pt 125 4)(line_width 1))
+		(line (pt 129 8)(pt 176 8)(line_width 1))
+		(line (pt 100 12)(pt 100 4)(line_width 1))
+		(line (pt 125 4)(pt 129 8)(line_width 1))
+		(line (pt 125 12)(pt 129 8)(line_width 1))
+	)
+	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -210,13 +210,13 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 232 368 376 448)
-	(text "lpm_dff5" (rect 48 1 104 17)(font "Arial" (font_size 10)))
-	(text "inst5" (rect 8 64 31 76)(font "Arial" ))
+	(text "lpm_dff6" (rect 48 1 104 17)(font "Arial" (font_size 10)))
+	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "data[3..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[3..0]" (rect 20 26 73 40)(font "Arial" (font_size 8)))
+		(text "data[5..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[5..0]" (rect 20 26 73 40)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -229,8 +229,8 @@ applicable agreement for further details.
 	(port
 		(pt 144 48)
 		(output)
-		(text "q[3..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
-		(text "q[3..0]" (rect 95 42 130 56)(font "Arial" (font_size 8)))
+		(text "q[5..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "q[5..0]" (rect 95 42 130 56)(font "Arial" (font_size 8)))
 		(line (pt 144 48)(pt 128 48)(line_width 3))
 	)
 	(drawing
@@ -303,12 +303,6 @@ applicable agreement for further details.
 	(pt 104 416)
 )
 (connector
-	(text "ALU_FLAGS[0..3]" (rect 104 384 192 396)(font "Arial" ))
-	(pt 232 400)
-	(pt 104 400)
-	(bus)
-)
-(connector
 	(text "stack_overflow_flag" (rect 135 536 235 548)(font "Arial" ))
 	(pt 280 552)
 	(pt 128 552)
@@ -317,17 +311,6 @@ applicable agreement for further details.
 	(pt 544 280)
 	(pt 472 280)
 	(bus)
-)
-(connector
-	(text "FLAGS[0..3]" (rect 401 400 462 412)(font "Arial" ))
-	(pt 376 416)
-	(pt 472 416)
-	(bus)
-)
-(connector
-	(text "FLAGS[4]" (rect 373 536 421 548)(font "Arial" ))
-	(pt 344 552)
-	(pt 472 552)
 )
 (connector
 	(pt 472 280)
@@ -342,6 +325,23 @@ applicable agreement for further details.
 (connector
 	(pt 472 552)
 	(pt 472 648)
+	(bus)
+)
+(connector
+	(text "FLAGS[7]" (rect 373 536 421 548)(font "Arial" ))
+	(pt 344 552)
+	(pt 472 552)
+)
+(connector
+	(text "ALU_FLAGS[0..5]" (rect 104 384 192 396)(font "Arial" ))
+	(pt 232 400)
+	(pt 104 400)
+	(bus)
+)
+(connector
+	(text "FLAGS[0..5]" (rect 401 400 462 412)(font "Arial" ))
+	(pt 376 416)
+	(pt 472 416)
 	(bus)
 )
 (junction (pt 528 56))

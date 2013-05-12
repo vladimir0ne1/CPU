@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun May 12 15:44:23 2013
+Analysis & Synthesis Status : Successful - Sun May 12 18:25:02 2013
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
 Revision Name : microcomputer
 Top-level Entity Name : microcomputer
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 1,633
-    Dedicated logic registers : 1,495
-Total registers : 1495
+    Combinational ALUTs : 1,618
+    Dedicated logic registers : 1,498
+Total registers : 1498
 Total pins : 192
 Total virtual pins : 0
 Total block memory bits : 2,048

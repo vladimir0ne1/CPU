@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "ALU_FLAGS[0..3]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
-		(text "ALU_FLAGS[0..3]" (rect 21 27 122 41)(font "Arial" (font_size 8)))
+		(text "ALU_FLAGS[0..5]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "ALU_FLAGS[0..5]" (rect 21 27 122 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port

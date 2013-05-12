@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 208 48)
 		(output)
-		(text "FLAG[0..3]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "FLAG[0..3]" (rect 126 43 187 57)(font "Arial" (font_size 8)))
+		(text "FLAG[0..5]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "FLAG[0..5]" (rect 126 43 187 57)(font "Arial" (font_size 8)))
 		(line (pt 208 48)(pt 192 48)(line_width 3))
 	)
 	(drawing

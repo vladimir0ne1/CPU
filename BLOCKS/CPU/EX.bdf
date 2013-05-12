@@ -101,6 +101,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 192 7 212 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 80 208 248 224)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "FLAGS[0..7]" (rect 5 0 66 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 208 424 384 440)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -216,7 +232,7 @@ applicable agreement for further details.
 	(output)
 	(rect 208 392 391 408)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ALU_FLAGS[0..3]" (rect 90 0 178 12)(font "Arial" ))
+	(text "ALU_FLAGS[0..5]" (rect 90 0 178 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -1099,7 +1115,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 872 1272 920 1304)
+	(rect 408 1496 456 1528)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst58" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -1173,7 +1189,7 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 768 968 832 1016)
+	(rect 328 1064 392 1112)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst64" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1255,7 +1271,7 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 488 1160 552 1208)
+	(rect 304 1256 368 1304)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst39" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1288,7 +1304,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 976 1104 1040 1152)
+	(rect 512 1328 576 1376)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst40" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1320,7 +1336,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 984 1184 1048 1232)
+	(rect 520 1408 584 1456)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst42" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1530,49 +1546,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 592 16 800 112)
-	(text "ALU" (rect 5 0 29 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "OP_TYPE[0..3]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
-		(text "OP_TYPE[0..3]" (rect 21 27 103 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "OP0[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
-		(text "OP0[0..7]" (rect 21 43 72 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "OP1[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
-		(text "OP1[0..7]" (rect 21 59 72 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "RESULT[0..7]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
-		(text "RESULT[0..7]" (rect 113 27 187 41)(font "Arial" (font_size 8)))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(port
-		(pt 208 48)
-		(output)
-		(text "FLAG[0..3]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "FLAG[0..3]" (rect 126 43 187 57)(font "Arial" (font_size 8)))
-		(line (pt 208 48)(pt 192 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 192 80)(line_width 1))
-	)
-)
-(symbol
 	(rect 608 616 672 664)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
@@ -1606,7 +1579,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 752 1096 816 1176)
+	(rect 288 1320 352 1400)
 	(text "OR4" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 69 26 81)(font "Arial" ))
 	(port
@@ -1852,6 +1825,164 @@ applicable agreement for further details.
 	)
 	(flipy)
 )
+(symbol
+	(rect 976 -752 1040 -672)
+	(text "OR4" (rect 45 0 63 10)(font "Arial" (font_size 6)))
+	(text "inst51" (rect 32 69 61 81)(font "Arial" ))
+	(port
+		(pt 64 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 45 7 62 19)(font "Courier New" (bold))(invisible))
+		(line (pt 64 16)(pt 51 16)(line_width 1))
+	)
+	(port
+		(pt 64 48)
+		(input)
+		(text "IN3" (rect 2 39 19 51)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 45 39 62 51)(font "Courier New" (bold))(invisible))
+		(line (pt 64 48)(pt 49 48)(line_width 1))
+	)
+	(port
+		(pt 64 64)
+		(input)
+		(text "IN4" (rect 2 55 19 67)(font "Courier New" (bold))(invisible))
+		(text "IN4" (rect 45 55 62 67)(font "Courier New" (bold))(invisible))
+		(line (pt 64 64)(pt 51 64)(line_width 1))
+	)
+	(port
+		(pt 64 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 45 23 62 35)(font "Courier New" (bold))(invisible))
+		(line (pt 64 32)(pt 49 32)(line_width 1))
+	)
+	(port
+		(pt 0 40)
+		(output)
+		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect -1 31 16 43)(font "Courier New" (bold))(invisible))
+		(line (pt 16 40)(pt 0 40)(line_width 1))
+	)
+	(drawing
+		(line (pt 51 67)(pt 51 51)(line_width 1))
+		(line (pt 39 52)(pt 51 52)(line_width 1))
+		(line (pt 51 12)(pt 51 29)(line_width 1))
+		(line (pt 51 29)(pt 39 29)(line_width 1))
+		(arc (pt 57 35)(pt 57 45)(rect 45 24 78 57)(line_width 1))
+		(arc (pt 39 29)(pt 15 40)(rect 7 29 70 92)(line_width 1))
+		(arc (pt 15 40)(pt 39 51)(rect 7 -11 70 52)(line_width 1))
+	)
+	(flipy)
+)
+(symbol
+	(rect 592 16 800 112)
+	(text "ALU" (rect 5 0 29 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "OP_TYPE[0..3]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "OP_TYPE[0..3]" (rect 21 27 103 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "OP0[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "OP0[0..7]" (rect 21 43 72 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "OP1[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "OP1[0..7]" (rect 21 59 72 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "RESULT[0..7]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "RESULT[0..7]" (rect 113 27 187 41)(font "Arial" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "FLAG[0..5]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "FLAG[0..5]" (rect 126 43 187 57)(font "Arial" (font_size 8)))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 80)(line_width 1))
+	)
+)
+(symbol
+	(rect 160 1072 224 1120)
+	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
+	(text "inst52" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 15 32)(line_width 1))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 15 16)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 48 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 36)(pt 25 36)(line_width 1))
+		(line (pt 14 13)(pt 25 13)(line_width 1))
+		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41)(line_width 1))
+		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76)(line_width 1))
+		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36)(line_width 1))
+	)
+)
+(symbol
+	(rect 48 1008 112 1056)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst53" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
 (connector
 	(text "OP_CODE[6]" (rect 370 -64 436 -52)(font "Arial" ))
 	(pt 456 -48)
@@ -1993,16 +2124,6 @@ applicable agreement for further details.
 	(pt 208 608)
 )
 (connector
-	(text "OP_CODE[7]" (rect 216 608 282 620)(font "Arial" ))
-	(pt 304 624)
-	(pt 208 624)
-)
-(connector
-	(text "OP_CODE[8]" (rect 216 624 282 636)(font "Arial" ))
-	(pt 304 640)
-	(pt 208 640)
-)
-(connector
 	(pt 448 600)
 	(pt 368 600)
 )
@@ -2123,11 +2244,6 @@ applicable agreement for further details.
 	(pt 928 760)
 )
 (connector
-	(text "OP_CODE[7]" (rect 232 744 298 756)(font "Arial" ))
-	(pt 328 760)
-	(pt 224 760)
-)
-(connector
 	(text "DATA_TO_RON[0..7]" (rect 1103 496 1208 508)(font "Arial" ))
 	(pt 1128 512)
 	(pt 1200 512)
@@ -2221,11 +2337,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "OP_CODE[9]" (rect 240 488 306 500)(font "Arial" ))
-	(pt 304 504)
-	(pt 232 504)
-)
-(connector
 	(text "CMP" (rect 379 488 402 500)(font "Arial" ))
 	(pt 352 504)
 	(pt 408 504)
@@ -2243,60 +2354,10 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "cmd1" (rect 712 968 739 980)(font "Arial" ))
-	(pt 768 984)
-	(pt 704 984)
-)
-(connector
-	(text "OP_CODE[3]" (rect 704 984 770 996)(font "Arial" ))
-	(pt 768 1000)
-	(pt 704 1000)
-)
-(connector
-	(text "ip_by_jmp_write" (rect 862 976 941 988)(font "Arial" ))
-	(pt 832 992)
-	(pt 928 992)
-)
-(connector
 	(text "DATA_FROM_STACK[0..7]" (rect 875 704 1008 716)(font "Arial" ))
 	(pt 896 720)
 	(pt 1000 720)
 	(bus)
-)
-(connector
-	(text "OP_CODE[4]" (rect 896 1104 962 1116)(font "Arial" ))
-	(pt 976 1120)
-	(pt 888 1120)
-)
-(connector
-	(text "OP_CODE[4]" (rect 424 1160 490 1172)(font "Arial" ))
-	(pt 488 1176)
-	(pt 416 1176)
-)
-(connector
-	(text "OP_CODE[5]" (rect 424 1176 490 1188)(font "Arial" ))
-	(pt 488 1192)
-	(pt 416 1192)
-)
-(connector
-	(text "STACK" (rect 560 1168 595 1180)(font "Arial" ))
-	(pt 552 1184)
-	(pt 608 1184)
-)
-(connector
-	(text "push" (rect 1048 1112 1071 1124)(font "Arial" ))
-	(pt 1040 1128)
-	(pt 1112 1128)
-)
-(connector
-	(text "OP_CODE[5]" (rect 904 1184 970 1196)(font "Arial" ))
-	(pt 984 1200)
-	(pt 896 1200)
-)
-(connector
-	(text "pop" (rect 1056 1192 1073 1204)(font "Arial" ))
-	(pt 1048 1208)
-	(pt 1120 1208)
 )
 (connector
 	(text "<<__$DEF_ALIAS4302>>" (rect 416 936 539 948)(font "Arial" )(invisible))
@@ -2315,24 +2376,6 @@ applicable agreement for further details.
 (connector
 	(pt 408 992)
 	(pt 392 992)
-)
-(connector
-	(text "OP1[0..7]" (rect 771 1272 818 1284)(font "Arial" ))
-	(pt 760 1288)
-	(pt 872 1288)
-	(bus)
-)
-(connector
-	(text "DATA_TO_STACK[0..7]" (rect 931 1272 1046 1284)(font "Arial" ))
-	(pt 920 1288)
-	(pt 1008 1288)
-	(bus)
-)
-(connector
-	(text "ALU_FLAGS[0..3]" (rect 888 48 976 60)(font "Arial" ))
-	(pt 976 64)
-	(pt 800 64)
-	(bus)
 )
 (connector
 	(text "<<__$DEF_ALIAS5106>>" (rect 216 576 339 588)(font "Arial" )(invisible))
@@ -2374,42 +2417,6 @@ applicable agreement for further details.
 	(text "write_to_ron" (rect 680 624 739 636)(font "Arial" ))
 	(pt 672 640)
 	(pt 720 640)
-)
-(connector
-	(pt 880 1216)
-	(pt 984 1216)
-)
-(connector
-	(pt 880 1216)
-	(pt 880 1136)
-)
-(connector
-	(text "cmd1" (rect 720 1096 747 1108)(font "Arial" ))
-	(pt 712 1112)
-	(pt 752 1112)
-)
-(connector
-	(text "cmd3" (rect 720 1128 747 1140)(font "Arial" ))
-	(pt 712 1144)
-	(pt 752 1144)
-)
-(connector
-	(text "cmd2" (rect 720 1112 747 1124)(font "Arial" ))
-	(pt 712 1128)
-	(pt 752 1128)
-)
-(connector
-	(text "cmd4" (rect 721 1144 748 1156)(font "Arial" ))
-	(pt 752 1160)
-	(pt 712 1160)
-)
-(connector
-	(pt 880 1136)
-	(pt 976 1136)
-)
-(connector
-	(pt 816 1136)
-	(pt 880 1136)
 )
 (connector
 	(text "cmd4" (rect 296 968 323 980)(font "Arial" ))
@@ -2789,9 +2796,195 @@ applicable agreement for further details.
 	(pt 568 -768)
 )
 (connector
-	(text "CMP" (rect 872 -776 895 -764)(font "Arial" ))
+	(text "OP_CODE[7]" (rect 240 488 306 500)(font "Arial" ))
+	(pt 304 504)
+	(pt 232 504)
+)
+(connector
+	(text "OP_CODE[9]" (rect 232 744 298 756)(font "Arial" ))
+	(pt 328 760)
+	(pt 224 760)
+)
+(connector
+	(pt 304 640)
+	(pt 248 640)
+)
+(connector
+	(pt 248 624)
+	(pt 248 640)
+)
+(connector
+	(pt 208 624)
+	(pt 248 624)
+)
+(connector
 	(pt 864 -760)
-	(pt 968 -760)
+	(pt 904 -760)
+)
+(connector
+	(pt 904 -760)
+	(pt 904 -712)
+)
+(connector
+	(pt 904 -712)
+	(pt 976 -712)
+)
+(connector
+	(text "OP_CODE[6]" (rect 1048 -752 1114 -740)(font "Arial" ))
+	(pt 1112 -736)
+	(pt 1040 -736)
+)
+(connector
+	(text "OP_CODE[7]" (rect 1048 -736 1114 -724)(font "Arial" ))
+	(pt 1040 -720)
+	(pt 1112 -720)
+)
+(connector
+	(text "OP_CODE[8]" (rect 1048 -720 1114 -708)(font "Arial" ))
+	(pt 1040 -704)
+	(pt 1112 -704)
+)
+(connector
+	(text "OP_CODE[9]" (rect 1048 -704 1114 -692)(font "Arial" ))
+	(pt 1040 -688)
+	(pt 1112 -688)
+)
+(connector
+	(text "ALU_FLAGS[0..5]" (rect 888 48 976 60)(font "Arial" ))
+	(pt 976 64)
+	(pt 800 64)
+	(bus)
+)
+(connector
+	(text "OP_CODE[8]" (rect 216 608 282 620)(font "Arial" ))
+	(pt 248 624)
+	(pt 304 624)
+)
+(connector
+	(text "OP_CODE[4]" (rect 432 1328 498 1340)(font "Arial" ))
+	(pt 512 1344)
+	(pt 424 1344)
+)
+(connector
+	(text "push" (rect 584 1336 607 1348)(font "Arial" ))
+	(pt 576 1352)
+	(pt 648 1352)
+)
+(connector
+	(text "OP_CODE[5]" (rect 440 1408 506 1420)(font "Arial" ))
+	(pt 520 1424)
+	(pt 432 1424)
+)
+(connector
+	(text "pop" (rect 592 1416 609 1428)(font "Arial" ))
+	(pt 584 1432)
+	(pt 656 1432)
+)
+(connector
+	(text "OP1[0..7]" (rect 307 1496 354 1508)(font "Arial" ))
+	(pt 296 1512)
+	(pt 408 1512)
+	(bus)
+)
+(connector
+	(text "DATA_TO_STACK[0..7]" (rect 467 1496 582 1508)(font "Arial" ))
+	(pt 456 1512)
+	(pt 544 1512)
+	(bus)
+)
+(connector
+	(pt 416 1440)
+	(pt 520 1440)
+)
+(connector
+	(pt 416 1440)
+	(pt 416 1360)
+)
+(connector
+	(text "cmd1" (rect 256 1320 283 1332)(font "Arial" ))
+	(pt 248 1336)
+	(pt 288 1336)
+)
+(connector
+	(text "cmd3" (rect 256 1352 283 1364)(font "Arial" ))
+	(pt 248 1368)
+	(pt 288 1368)
+)
+(connector
+	(text "cmd2" (rect 256 1336 283 1348)(font "Arial" ))
+	(pt 248 1352)
+	(pt 288 1352)
+)
+(connector
+	(text "cmd4" (rect 257 1368 284 1380)(font "Arial" ))
+	(pt 288 1384)
+	(pt 248 1384)
+)
+(connector
+	(text "OP_CODE[4]" (rect 240 1256 306 1268)(font "Arial" ))
+	(pt 304 1272)
+	(pt 232 1272)
+)
+(connector
+	(text "OP_CODE[5]" (rect 240 1272 306 1284)(font "Arial" ))
+	(pt 304 1288)
+	(pt 232 1288)
+)
+(connector
+	(text "STACK" (rect 376 1264 411 1276)(font "Arial" ))
+	(pt 368 1280)
+	(pt 424 1280)
+)
+(connector
+	(pt 352 1360)
+	(pt 416 1360)
+)
+(connector
+	(pt 416 1360)
+	(pt 512 1360)
+)
+(connector
+	(text "cmd1" (rect 272 1064 299 1076)(font "Arial" ))
+	(pt 328 1080)
+	(pt 264 1080)
+)
+(connector
+	(text "ip_by_jmp_write" (rect 422 1072 501 1084)(font "Arial" ))
+	(pt 392 1088)
+	(pt 488 1088)
+)
+(connector
+	(text "<<__$DEF_ALIAS9715>>" (rect 264 1080 387 1092)(font "Arial" )(invisible))
+	(pt 224 1096)
+	(pt 328 1096)
+)
+(connector
+	(text "OP_CODE[3]" (rect 72 1088 138 1100)(font "Arial" ))
+	(pt 160 1104)
+	(pt 64 1104)
+)
+(connector
+	(text "<<__$DEF_ALIAS9722>>" (rect 0 1072 123 1084)(font "Arial" )(invisible))
+	(pt 136 1088)
+	(pt 160 1088)
+)
+(connector
+	(text "OP_CODE[10]" (rect -24 1008 47 1020)(font "Arial" ))
+	(pt 48 1024)
+	(pt -32 1024)
+)
+(connector
+	(text "FLAGS[5]" (rect -24 1024 24 1036)(font "Arial" ))
+	(pt 48 1040)
+	(pt -32 1040)
+)
+(connector
+	(pt 136 1088)
+	(pt 136 1032)
+)
+(connector
+	(pt 136 1032)
+	(pt 112 1032)
 )
 (junction (pt 304 -24))
 (junction (pt 304 0))
@@ -2806,7 +2999,6 @@ applicable agreement for further details.
 (junction (pt 1128 616))
 (junction (pt 304 776))
 (junction (pt 248 576))
-(junction (pt 880 1136))
 (junction (pt 120 -1224))
 (junction (pt 432 -1160))
 (junction (pt 416 -352))
@@ -2820,3 +3012,5 @@ applicable agreement for further details.
 (junction (pt 608 -352))
 (junction (pt 576 -352))
 (junction (pt 592 -352))
+(junction (pt 248 624))
+(junction (pt 416 1360))
