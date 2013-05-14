@@ -213,22 +213,6 @@ applicable agreement for further details.
 	)
 )
 (pin
-	(output)
-	(rect 144 -584 340 -568)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "DF_COUNTER[0..3]" (rect 90 0 191 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
 	(bidir)
 	(rect -472 -1280 -264 -1264)
 	(text "BIDIR" (rect 183 0 207 10)(font "Arial" (font_size 6)))
@@ -2653,16 +2637,6 @@ applicable agreement for further details.
 	(pt 320 -768)
 )
 (connector
-	(pt 80 -776)
-	(pt 80 -576)
-	(bus)
-)
-(connector
-	(pt 80 -576)
-	(pt 144 -576)
-	(bus)
-)
-(connector
 	(text "rst" (rect -136 -832 -124 -820)(font "Arial" ))
 	(pt -80 -816)
 	(pt -144 -816)
@@ -3061,16 +3035,6 @@ applicable agreement for further details.
 (connector
 	(pt -104 -1272)
 	(pt -80 -1272)
-	(bus)
-)
-(connector
-	(pt 64 -776)
-	(pt 80 -776)
-	(bus)
-)
-(connector
-	(pt 80 -776)
-	(pt 144 -776)
 	(bus)
 )
 (connector
@@ -3717,11 +3681,15 @@ applicable agreement for further details.
 	(pt 904 -608)
 	(pt 984 -608)
 )
+(connector
+	(pt 64 -776)
+	(pt 144 -776)
+	(bus)
+)
 (junction (pt -8 -1272))
 (junction (pt -104 -1272))
 (junction (pt 16 -1272))
 (junction (pt -128 -1272))
-(junction (pt 80 -776))
 (junction (pt 552 -928))
 (junction (pt 776 -752))
 (junction (pt 1464 -648))

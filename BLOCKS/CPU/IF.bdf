@@ -38,22 +38,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 752 -264 920 -248)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "IP_IN[0..7]" (rect 5 0 59 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 744 -232 920 -216)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
 	(text "IP_BY_JMP[0..7]" (rect 5 0 89 12)(font "Arial" ))
@@ -67,22 +51,6 @@ applicable agreement for further details.
 		(line (pt 125 12)(pt 129 8)(line_width 1))
 	)
 	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(output)
-	(rect 1032 -208 1208 -192)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "IP_OUT[0..7]" (rect 90 0 154 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
 )
 (pin
 	(output)
@@ -166,9 +134,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1032 -184 1208 -168)
+	(rect 1032 -208 1208 -192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ip_write" (rect 90 0 126 12)(font "Arial" ))
+	(text "IP_OUT[0..7]" (rect 90 0 154 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -1319,7 +1287,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1864 464 1928 512)
+	(rect 1864 496 1928 544)
 	(text "OR3" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst31" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1382,6 +1350,41 @@ applicable agreement for further details.
 		(line (pt 14 25)(pt 32 16)(line_width 1))
 	)
 )
+(symbol
+	(rect 2048 472 2192 552)
+	(text "lpm_dff0" (rect 48 1 104 17)(font "Arial" (font_size 10)))
+	(text "inst36" (rect 8 64 37 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[7..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[7..0]" (rect 20 26 73 40)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 26 42 55 56)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 144 48)
+		(output)
+		(text "q[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "q[7..0]" (rect 95 42 130 56)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 128 48)(line_width 3))
+	)
+	(drawing
+		(text "DFF" (rect 109 17 131 29)(font "Arial" ))
+		(line (pt 16 16)(pt 128 16)(line_width 1))
+		(line (pt 128 16)(pt 128 64)(line_width 1))
+		(line (pt 128 64)(pt 16 64)(line_width 1))
+		(line (pt 16 64)(pt 16 16)(line_width 1))
+		(line (pt 16 42)(pt 22 48)(line_width 1))
+		(line (pt 22 48)(pt 16 54)(line_width 1))
+	)
+)
 (connector
 	(text "CMD_0_OUT[0..7]" (rect 1234 -56 1324 -44)(font "Arial" ))
 	(pt 1136 -40)
@@ -1438,12 +1441,6 @@ applicable agreement for further details.
 	(text "cmd_1_write" (rect 1210 24 1271 36)(font "Arial" ))
 	(pt 1184 40)
 	(pt 1232 40)
-)
-(connector
-	(text "IP_IN[0..7]" (rect 856 192 910 204)(font "Arial" ))
-	(pt 832 208)
-	(pt 952 208)
-	(bus)
 )
 (connector
 	(pt 952 208)
@@ -1911,17 +1908,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "IP_OUT[0..7]" (rect 1709 472 1773 484)(font "Arial" ))
-	(pt 1688 488)
-	(pt 1776 488)
-	(bus)
-)
-(connector
-	(pt 1776 488)
-	(pt 1816 488)
-	(bus)
-)
-(connector
 	(pt 1688 600)
 	(pt 1776 600)
 	(bus)
@@ -1941,22 +1927,9 @@ applicable agreement for further details.
 	(pt 1672 552)
 )
 (connector
-	(text "ip_write" (rect 1936 472 1972 484)(font "Arial" ))
-	(pt 1928 488)
-	(pt 1992 488)
-)
-(connector
 	(text "<<__$DEF_ALIAS5734>>" (rect 1746 416 1869 428)(font "Arial" )(invisible))
 	(pt 1848 432)
 	(pt 1736 432)
-)
-(connector
-	(pt 1848 432)
-	(pt 1848 480)
-)
-(connector
-	(pt 1848 480)
-	(pt 1864 480)
 )
 (connector
 	(pt 1848 544)
@@ -2016,23 +1989,7 @@ applicable agreement for further details.
 	(pt 1640 648)
 )
 (connector
-	(pt 1848 544)
-	(pt 1848 488)
-)
-(connector
-	(pt 1848 488)
-	(pt 1864 488)
-)
-(connector
-	(pt 1864 496)
-	(pt 1856 496)
-)
-(connector
 	(pt 1744 656)
-	(pt 1856 656)
-)
-(connector
-	(pt 1856 496)
 	(pt 1856 656)
 )
 (connector
@@ -2075,6 +2032,69 @@ applicable agreement for further details.
 	(text "CB[27]" (rect 1190 -360 1224 -348)(font "Arial" ))
 	(pt 1152 -344)
 	(pt 1280 -344)
+)
+(connector
+	(text "<<__$DEF_ALIAS481>>" (rect 1709 472 1827 484)(font "Arial" )(invisible))
+	(pt 1688 488)
+	(pt 1776 488)
+	(bus)
+)
+(connector
+	(pt 1848 432)
+	(pt 1848 512)
+)
+(connector
+	(pt 1848 512)
+	(pt 1864 512)
+)
+(connector
+	(pt 1848 544)
+	(pt 1848 520)
+)
+(connector
+	(pt 1848 520)
+	(pt 1864 520)
+)
+(connector
+	(pt 1856 528)
+	(pt 1864 528)
+)
+(connector
+	(pt 1856 656)
+	(pt 1856 528)
+)
+(connector
+	(text "ip_write" (rect 1936 504 1972 516)(font "Arial" ))
+	(pt 1928 520)
+	(pt 2048 520)
+)
+(connector
+	(pt 1968 504)
+	(pt 1968 488)
+	(bus)
+)
+(connector
+	(pt 1776 488)
+	(pt 1968 488)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS500>>" (rect 1987 488 2105 500)(font "Arial" )(invisible))
+	(pt 1968 504)
+	(pt 2048 504)
+	(bus)
+)
+(connector
+	(text "IP_OUT[0..7]" (rect 856 192 920 204)(font "Arial" ))
+	(pt 832 208)
+	(pt 952 208)
+	(bus)
+)
+(connector
+	(text "IP_OUT[0..7]" (rect 2222 504 2286 516)(font "Arial" ))
+	(pt 2264 520)
+	(pt 2192 520)
+	(bus)
 )
 (junction (pt 968 -40))
 (junction (pt 1632 208))

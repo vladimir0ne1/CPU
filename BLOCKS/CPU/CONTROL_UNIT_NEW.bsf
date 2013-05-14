@@ -1,0 +1,169 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 376 336)
+	(text "CONTROL_UNIT" (rect 5 0 95 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 21 27 50 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CACHE_OUT[0..7]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "CACHE_OUT[0..7]" (rect 21 43 122 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "STACK_OUT[0..7]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "STACK_OUT[0..7]" (rect 21 59 122 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 360 48)
+		(output)
+		(text "CACHE_ADDR[0..7]" (rect 0 0 110 14)(font "Arial" (font_size 8)))
+		(text "CACHE_ADDR[0..7]" (rect 229 43 339 57)(font "Arial" (font_size 8)))
+		(line (pt 360 48)(pt 344 48)(line_width 3))
+	)
+	(port
+		(pt 360 64)
+		(output)
+		(text "RON_NUM[0..1]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "RON_NUM[0..1]" (rect 252 59 339 73)(font "Arial" (font_size 8)))
+		(line (pt 360 64)(pt 344 64)(line_width 3))
+	)
+	(port
+		(pt 360 80)
+		(output)
+		(text "DATA_TO_CACHE[0..7]" (rect 0 0 134 14)(font "Arial" (font_size 8)))
+		(text "DATA_TO_CACHE[0..7]" (rect 205 75 339 89)(font "Arial" (font_size 8)))
+		(line (pt 360 80)(pt 344 80)(line_width 3))
+	)
+	(port
+		(pt 360 96)
+		(output)
+		(text "COMMANDS[0..3]" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "COMMANDS[0..3]" (rect 240 91 339 105)(font "Arial" (font_size 8)))
+		(line (pt 360 96)(pt 344 96)(line_width 3))
+	)
+	(port
+		(pt 360 112)
+		(output)
+		(text "cmd0[0..7]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "cmd0[0..7]" (rect 280 107 339 121)(font "Arial" (font_size 8)))
+		(line (pt 360 112)(pt 344 112)(line_width 3))
+	)
+	(port
+		(pt 360 128)
+		(output)
+		(text "cmd1[0..7]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "cmd1[0..7]" (rect 280 123 339 137)(font "Arial" (font_size 8)))
+		(line (pt 360 128)(pt 344 128)(line_width 3))
+	)
+	(port
+		(pt 360 144)
+		(output)
+		(text "OP_CODE_OUT[0..15]" (rect 0 0 123 14)(font "Arial" (font_size 8)))
+		(text "OP_CODE_OUT[0..15]" (rect 216 139 339 153)(font "Arial" (font_size 8)))
+		(line (pt 360 144)(pt 344 144)(line_width 3))
+	)
+	(port
+		(pt 360 160)
+		(output)
+		(text "PARCER_RON_NUM_OUT_OUT[0..1]" (rect 0 0 206 14)(font "Arial" (font_size 8)))
+		(text "PARCER_RON_NUM_OUT_OUT[0..1]" (rect 133 155 339 169)(font "Arial" (font_size 8)))
+		(line (pt 360 160)(pt 344 160)(line_width 3))
+	)
+	(port
+		(pt 360 176)
+		(output)
+		(text "ADDRESSING_TYPE_OUT" (rect 0 0 147 14)(font "Arial" (font_size 8)))
+		(text "ADDRESSING_TYPE_OUT" (rect 192 171 339 185)(font "Arial" (font_size 8)))
+		(line (pt 360 176)(pt 344 176)(line_width 1))
+	)
+	(port
+		(pt 360 192)
+		(output)
+		(text "DF_ADDRESS_SET[0..7]" (rect 0 0 138 14)(font "Arial" (font_size 8)))
+		(text "DF_ADDRESS_SET[0..7]" (rect 201 187 339 201)(font "Arial" (font_size 8)))
+		(line (pt 360 192)(pt 344 192)(line_width 3))
+	)
+	(port
+		(pt 360 208)
+		(output)
+		(text "OP0[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "OP0[0..7]" (rect 288 203 339 217)(font "Arial" (font_size 8)))
+		(line (pt 360 208)(pt 344 208)(line_width 3))
+	)
+	(port
+		(pt 360 224)
+		(output)
+		(text "OP1[0..7]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "OP1[0..7]" (rect 288 219 339 233)(font "Arial" (font_size 8)))
+		(line (pt 360 224)(pt 344 224)(line_width 3))
+	)
+	(port
+		(pt 360 240)
+		(output)
+		(text "DF_RON_NUM1[0..1]" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "DF_RON_NUM1[0..1]" (rect 223 235 339 249)(font "Arial" (font_size 8)))
+		(line (pt 360 240)(pt 344 240)(line_width 3))
+	)
+	(port
+		(pt 360 256)
+		(output)
+		(text "DF_COUNTER[0..3]" (rect 0 0 107 14)(font "Arial" (font_size 8)))
+		(text "DF_COUNTER[0..3]" (rect 232 251 339 265)(font "Arial" (font_size 8)))
+		(line (pt 360 256)(pt 344 256)(line_width 3))
+	)
+	(port
+		(pt 360 272)
+		(output)
+		(text "ALU_OUT[0..7]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
+		(text "ALU_OUT[0..7]" (rect 255 267 339 281)(font "Arial" (font_size 8)))
+		(line (pt 360 272)(pt 344 272)(line_width 3))
+	)
+	(port
+		(pt 360 288)
+		(output)
+		(text "FLAG_OUT[0..7]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "FLAG_OUT[0..7]" (rect 246 283 339 297)(font "Arial" (font_size 8)))
+		(line (pt 360 288)(pt 344 288)(line_width 3))
+	)
+	(port
+		(pt 360 32)
+		(bidir)
+		(text "CONTROL_BUS[0..32]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "CONTROL_BUS[0..32]" (rect 214 27 339 41)(font "Arial" (font_size 8)))
+		(line (pt 360 32)(pt 344 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 344 304)(line_width 1))
+	)
+)

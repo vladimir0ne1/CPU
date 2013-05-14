@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 26.461 ns
-From           : CACHE:inst31|SET:inst51|ROW:inst|lpm_dff0:inst13|lpm_ff:lpm_ff_component|dffs[2]
-To             : cache_out[5]
+Actual Time    : 38.163 ns
+From           : CACHE:inst31|SET:inst53|ROW:inst|inst8
+To             : cache_out[1]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.650 ns
+Actual Time    : 5.914 ns
 From           : clk
 To             : cb[27]
 From Clock     : --
@@ -23,24 +23,24 @@ To Clock       : --
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clk'
-Slack          : 0.348 ns
+Slack          : -12.518 ns
 Required Time  : 50.00 MHz ( period = 20.000 ns )
-Actual Time    : 50.89 MHz ( period = 19.652 ns )
-From           : CACHE:inst31|SET:inst64|LRU:inst17|lpm_dff1:inst22|lpm_ff:lpm_ff_component|dffs[0]
-To             : CACHE:inst31|SET:inst64|LRU:inst17|lpm_counter3:inst16|lpm_counter:lpm_counter_component|cntr_8ek:auto_generated|safe_q[0]
+Actual Time    : 30.75 MHz ( period = 32.518 ns )
+From           : CACHE:inst31|SET:inst53|LRU:inst17|lpm_dff1:inst22|lpm_ff:lpm_ff_component|dffs[0]~DUPLICATE
+To             : CACHE:inst31|SET:inst53|LRU:inst17|lpm_counter3:inst16|lpm_counter:lpm_counter_component|cntr_8ek:auto_generated|safe_q[1]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 0
+Failed Paths   : 35444
 
 Type           : Clock Hold: 'clk'
-Slack          : -16.746 ns
+Slack          : -29.488 ns
 Required Time  : 50.00 MHz ( period = 20.000 ns )
 Actual Time    : N/A
-From           : CACHE:inst31|SET:inst53|LRU:inst17|lpm_counter4:inst|lpm_counter:lpm_counter_component|cntr_7ek:auto_generated|safe_q[0]
+From           : CACHE:inst31|SET:inst53|LRU:inst17|lpm_counter3:inst16|lpm_counter:lpm_counter_component|cntr_8ek:auto_generated|safe_q[0]
 To             : CACHE:inst31|SET:inst53|LRU:inst17|lpm_dff1:inst22|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 53552
+Failed Paths   : 93132
 
 Type           : Total number of failed paths
 Slack          : 
@@ -50,7 +50,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 53552
+Failed Paths   : 128576
 
 --------------------------------------------------------------------------------------
 
