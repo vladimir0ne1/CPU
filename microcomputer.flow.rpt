@@ -1,5 +1,5 @@
 Flow report for microcomputer
-Tue May 14 18:57:43 2013
+Tue May 14 19:12:29 2013
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Tue May 14 18:57:43 2013   ;
+; Flow Status                   ; Successful - Tue May 14 19:12:29 2013   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; microcomputer                           ;
 ; Top-level Entity Name         ; microcomputer                           ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Met timing requirements       ; No                                      ;
 ; Logic utilization             ; 24 %                                    ;
 ;     Combinational ALUTs       ; 1,795 / 12,480 ( 14 % )                 ;
-;     Dedicated logic registers ; 1,594 / 12,480 ( 13 % )                 ;
-; Total registers               ; 1594                                    ;
+;     Dedicated logic registers ; 1,595 / 12,480 ( 13 % )                 ;
+; Total registers               ; 1595                                    ;
 ; Total pins                    ; 130 / 343 ( 38 % )                      ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 2,048 / 419,328 ( < 1 % )               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/14/2013 18:55:52 ;
+; Start date & time ; 05/14/2013 19:10:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; microcomputer       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 1096884134828.136854695205164  ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 1096884134828.136854783604384  ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_BUSTRI                     ; --            ; --          ; --             ;
@@ -436,11 +436,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:37     ; 1.0                     ; 272 MB              ; 00:00:37                           ;
-; Fitter                  ; 00:00:58     ; 1.0                     ; 245 MB              ; 00:00:58                           ;
+; Analysis & Synthesis    ; 00:00:38     ; 1.0                     ; 275 MB              ; 00:00:38                           ;
+; Fitter                  ; 00:01:00     ; 1.0                     ; 245 MB              ; 00:01:00                           ;
 ; Assembler               ; 00:00:04     ; 1.0                     ; 218 MB              ; 00:00:04                           ;
 ; Classic Timing Analyzer ; 00:00:04     ; 1.0                     ; 164 MB              ; 00:00:04                           ;
-; Total                   ; 00:01:43     ; --                      ; --                  ; 00:01:43                           ;
+; Total                   ; 00:01:46     ; --                      ; --                  ; 00:01:46                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
